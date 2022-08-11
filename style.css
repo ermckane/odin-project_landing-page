@@ -1,12 +1,12 @@
 body {
-  background-color: #497A4B;
+  background-color: #254b3c;
   font-family: Century;
   font-size: 16px;
   margin: 32px;
 }
 
 .page {
-  background-color: #F7ECCD;
+  background-color: #F7F0E3;
   border-radius: 5px;
 }
 
@@ -19,20 +19,28 @@ body {
   padding-left: 16px;
   
 }
- 
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
 ul {
   list-style: none;
   display: flex;
-  gap: 32px
+  justify-content: space-between;
+  gap: 82px;
+  padding: 0px;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .menubtn {
-  background-color: #F7ECCD;
+  background-color: #F7F0E3;
   color: rgb(0, 0, 0);
   font-size: 14px;
   border: none;
@@ -41,7 +49,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #F7F0E3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -49,7 +57,7 @@ ul {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 12px;
   text-decoration: none;
   display: block;
 }
