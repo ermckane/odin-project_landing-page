@@ -2,7 +2,7 @@ body {
   background-color: #254b3c;
   font-family: Century;
   font-size: 16px;
-  margin: 32px;
+  margin: 80px 64px;
 }
 
 .page {
@@ -15,35 +15,54 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 42px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 16px 48px;
   
 }
 
-.menu {
+.body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 48px;
+  margin-top: 24px;
+}
+
+.body-left {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
   flex: 1 1 auto;
 }
 
-ul {
-  list-style: none;
+.body-middle {
+  width: 100px;
+  height: auto;
+  flex: 1 1 auto;
+}
+
+.body-right {
   display: flex;
-  justify-content: space-between;
-  gap: 82px;
-  padding: 0px;
+  justify-content: flex-end;
+  width: 575px;
+  height: 750px;
+  background-image: url(./images/body-image.png);
+  flex: 1
+}
+
+.body-text {
+  font-size: 16px;
+}
+
+.catchphrase {
+  font-size: 64px;
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 36px;
+
 }
 
 .dropdown {
   position: relative;
   display: inline;
-}
-
-.menubtn {
-  background-color: #F7F0E3;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  border: none;
 }
 
 .dropdown-content {
@@ -70,3 +89,25 @@ ul {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.menubtn {
+  background-color: #F7F0E3;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 82px;
+  padding: 0px;
+}
+
