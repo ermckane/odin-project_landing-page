@@ -8,7 +8,7 @@ body {
 .page {
   background-color: #F7F0E3;
   border-radius: 5px;
-  max-width: 1400px;
+  max-width: 1200px;
   justify-content: center;
   margin: auto;
 
@@ -55,7 +55,7 @@ body {
   overflow: hidden;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(199, 218, 224);
+  background-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
 }
 
 .body-text {
@@ -65,14 +65,17 @@ body {
   margin-bottom: 48px;
 }
 
-.catchphrase {
-  font-size: 64px;
-  line-height: 1;
-  margin-top: 0px;
-  margin-bottom: 36px;
-
+.content {
+  display: flex;
+  gap: 48px;
 }
 
+.content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+}
 .dropdown {
   position: relative;
   display: inline;
@@ -135,6 +138,14 @@ body {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 36px;
+
 }
 
 ul {
