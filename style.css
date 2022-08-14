@@ -9,7 +9,6 @@ body {
   background-color: #F7F0E3;
   border-radius: 5px;
   max-width: 1400px;
-  box-sizing: border-box;
   justify-content: center;
   margin: auto;
 
@@ -37,26 +36,33 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
-  width: 33.33%;
+  width: 40%;
   padding-right: 48px;
 }
 
 .body-right {
   display: flex;
-  justify-content: flex-end;
-  flex: 2 1 auto;
-  width: 66.67%;
-  background-image: url(./images/body-image.jpg);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 95%;
+  flex: 0 1 auto;
+  justify-content: flex-start;
+  max-width: 60%;
   min-width: 0;
+  }
+
+.bodyrightimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 218, 224);
 }
 
 .body-text {
   font-size: 14px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
+  margin-bottom: 48px;
 }
 
 .catchphrase {
@@ -97,7 +103,7 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.explrbtn {
+.btnyel {
   height: 36px;
   width: 120px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -108,7 +114,7 @@ body {
 
 .explore {
   display: flex;
-  height: 25%;
+  height: 17.5%;
   align-items: center;
 }
 
@@ -125,12 +131,10 @@ body {
   border: none;
 }
 
-.plantbig {
-  display: flex;
-  flex: 0 1 auto;
-  padding-top: 64px;
-  padding-right: 16px;
-  transform: scale(.95);
+.rightimg {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 ul {
