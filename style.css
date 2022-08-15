@@ -10,7 +10,6 @@ body {
   max-width: 1200px;
   justify-content: center;
   margin: auto;
-
 }
 
 .header {
@@ -19,7 +18,6 @@ body {
   align-items: center;
   height: 42px;
   padding: 16px 48px;
-  
 }
 
 .body {
@@ -29,7 +27,7 @@ body {
   margin-top: 24px;
   flex: 1 1 auto;
   gap: 64px;
-  border-bottom: solid 1px rgb(49, 49, 49);
+  border-bottom: solid 32px #254b3c;
 }
 
 .body-left {
@@ -65,11 +63,13 @@ body {
   margin-bottom: 48px;
 }
 
-.cardcontainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 16px;
+.btnyel {
+  height: 36px;
+  width: 120px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(255, 227, 134);
 }
 
 .card {
@@ -80,6 +80,13 @@ body {
   border: solid 10px;
   border-radius: 5px;
   border-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .cardbutton {
@@ -127,10 +134,18 @@ body {
 .content-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 30%;
-
 }
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 32px;
+  overflow: hidden;
+}
+
 .dropdown {
   position: relative;
   display: inline;
@@ -161,15 +176,6 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.btnyel {
-  height: 36px;
-  width: 120px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 20px;
-  border-style: none;
-  background-color: rgb(255, 227, 134);
-}
-
 .explore {
   display: flex;
   height: 17.5%;
@@ -188,13 +194,17 @@ body {
 
 .lefttitle {
   font-size: 42px;
+  line-height: 1;
   font-family: Century;
 }
 
 .lefttext {
+  display: flex;
+  flex-direction: column;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   font-size: 14px;
+  gap: 24px;
 }
 
 #mainimg {
@@ -224,7 +234,6 @@ body {
 
 .rightp {
   font-family:Century, Geneva, Tahoma, sans-serif;
-  line-height: 1.5;
   font-size: 24px;
   width: 300px;
 }
