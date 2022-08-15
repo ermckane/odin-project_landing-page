@@ -1,7 +1,6 @@
 body {
   background-color: #254b3c;
-  font-family: Century;
-  font-size: 16px;
+  font-family: Century, Tahoma, sans-serif;
   margin: 80px 64px;
 }
 
@@ -30,6 +29,7 @@ body {
   margin-top: 24px;
   flex: 1 1 auto;
   gap: 64px;
+  border-bottom: solid 1px rgb(49, 49, 49);
 }
 
 .body-left {
@@ -65,16 +65,71 @@ body {
   margin-bottom: 48px;
 }
 
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  background-color: rgb(212, 219, 221);
+  border: solid 10px;
+  border-radius: 5px;
+  border-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
+}
+
+.cardbutton {
+  height: 27px;
+  width: 100px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(199, 218, 224);
+}
+
+.cardhold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cardimg {
+  height: 270px;
+  width: 200px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.cardinfo {
+  background-color: rgb(247, 247, 247);
+  padding: 12px;
+  padding-top: 0px;
+}
+
+.cardtitle {
+  font-size: 18px;
+}
+
 .content {
   display: flex;
+  padding: 48px;
+  height: 700px;
+  flex: 1 1 auto;
   gap: 48px;
 }
 
 .content-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   width: 30%;
+
 }
 .dropdown {
   position: relative;
@@ -121,6 +176,33 @@ body {
   align-items: center;
 }
 
+.focusimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
+}
+
+.lefttitle {
+  font-size: 42px;
+  font-family: Century;
+}
+
+.lefttext {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#mainimg {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -138,6 +220,13 @@ body {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+
+.rightp {
+  font-family:Century, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  width: 300px;
 }
 
 .title {
