@@ -27,7 +27,7 @@ body {
   margin-top: 24px;
   flex: 1 1 auto;
   gap: 64px;
-  border-bottom: solid 32px #254b3c;
+  border-bottom: solid 12px #254b3c;
 }
 
 .body-left {
@@ -51,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   background-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
 }
@@ -75,17 +75,17 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
   background-color: rgb(212, 219, 221);
-  border: solid 10px;
+  border: solid 5px;
   border-radius: 5px;
   border-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
 }
 
 .cardcontainer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex: 1;
   gap: 16px;
 }
 
@@ -106,8 +106,8 @@ body {
 }
 
 .cardimg {
-  height: 270px;
-  width: 200px;
+  height: 320px;
+  width: 250px;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -125,25 +125,29 @@ body {
 
 .content {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 48px;
   height: 700px;
   flex: 1 1 auto;
-  gap: 48px;
 }
 
-.content-left {
+#contenttitle {
+  margin-bottom: 0;
+}
+
+.content-bottom {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.content-top {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30%;
-}
-
-.content-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 32px;
-  overflow: hidden;
+  flex: 1;
+  margin-bottom: 48px;
 }
 
 .dropdown {
@@ -182,35 +186,12 @@ body {
   align-items: center;
 }
 
-.focusimg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(212, 219, 221);  /*alternative choice 199, 218, 224*/
-}
-
-.lefttitle {
-  font-size: 42px;
-  line-height: 1;
-  font-family: Century;
-}
-
-.lefttext {
+.toptext {
   display: flex;
   flex-direction: column;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   font-size: 14px;
-  gap: 24px;
-}
-
-#mainimg {
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
 }
 
 .menu {
@@ -232,10 +213,11 @@ body {
   object-fit: cover;
 }
 
-.rightp {
+.topp {
   font-family:Century, Geneva, Tahoma, sans-serif;
   font-size: 24px;
-  width: 300px;
+  width: 500px;
+  margin: 0;
 }
 
 .title {
@@ -243,7 +225,7 @@ body {
   line-height: 1;
   margin-top: 0px;
   margin-bottom: 36px;
-
+  font-family: Century, Geneva, Tahoma, sans-serif;;
 }
 
 ul {
