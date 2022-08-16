@@ -250,6 +250,12 @@ body {
   padding-bottom: 0px;
 }
 
+#pagethree {
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+}
+
 .rightimg {
   min-width: 100%;
   min-height: 100%;
@@ -271,6 +277,29 @@ body {
   font-family: Century, Geneva, Tahoma, sans-serif;;
 }
 
+.quotecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 48px;
+  padding: 48px;
+  background-color: rgb(247, 247, 247);
+  border: solid 5px rgb(212, 219, 221);
+  border-radius: 5px;
+}
+
+.quote,
+.author,
+.subscribequote {
+  font-size: 20px;
+}
+
+.author {
+  align-self: flex-end;
+}
+
+
 ul {
   list-style: none;
   display: flex;
@@ -279,3 +308,18 @@ ul {
   padding: 0px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribebox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:24px;
+  padding: 48px;
+  background-color: rgb(199, 218, 224);
+  border: solid 5px rgb(22, 22, 22);
+}
